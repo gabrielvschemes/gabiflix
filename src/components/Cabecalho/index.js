@@ -3,7 +3,7 @@ import './index.css';
 import Logo from './marca.png';
 import Barra from './Lupa.png';
 
-export default ({black}) => {
+const Cabecalho= ({black}) => {
     return(
         <header className={black ? 'black' : ''}>
             <div className="header--logo">
@@ -26,3 +26,4 @@ export default ({black}) => {
                </header>
     )
 }
+export default Cabecalho;

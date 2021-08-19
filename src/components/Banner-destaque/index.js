@@ -1,7 +1,7 @@
 import React from 'react';
 import './index.css';
 
-export default ({item}) => {
+const Banner= ({item}) => {
     console.log(item);
 
     let firstDate = new Date(item.first_air_date);
@@ -42,3 +42,4 @@ export default ({item}) => {
        </section>
     );
 }
+export default Banner;

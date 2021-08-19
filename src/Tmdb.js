@@ -8,9 +8,14 @@ const basicFetch = async (endpoint) => {
     return json;
 }
 
-export default {
+const Tmdb= {
     getHomeList: async () => {
         return [
+            {
+                slug: 'originals',
+                title: 'Adicionados Recentemente',
+                items: await basicFetch(`/discover/tv?with_network=213&language=pt-BR&api_key=${API_KEY}`)
+            },
             {
                 slug: 'trending',
                 title: 'Recomendados para Você',
@@ -20,11 +25,6 @@ export default {
                 slug: 'toprated',
                 title: 'Em Alta',
                 items: await basicFetch(`/movie/top_rated?language=pt-BR&api_key=${API_KEY}`)
-            },
-            {
-                slug: 'originals',
-                title: 'Adicionados Recentemente',
-                items: await basicFetch(`/discover/tv?with_network=213&language=pt-BR&api_key=${API_KEY}`)
             },
             {
                 slug: 'action',
@@ -73,3 +73,4 @@ export default {
         return info;
     }
 }
+export default Tmdb;

@@ -5,7 +5,7 @@ import MovieRow from './components/Catálogo';
 import FeaturedMovie from './components/Banner-destaque';
 import Cabecalho from './components/Cabecalho';
 
-export default () => {
+const App= () => {
 
   const [movieList, setMovieList] = useState([]);
   const [featuredData, setFeaturedData] = useState(null);
@@ -77,3 +77,4 @@ export default () => {
     </div>
   );
 }
+export default App;

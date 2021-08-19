@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import './index.css';
 import NavigateBeforeIcon from '@material-ui/icons/NavigateBefore';
 import NavigateNextIcon from '@material-ui/icons/NavigateNext';
+import Super from './Super.png';
 
-export default ({title, items}) => {
+const Catálogo= ({title, items}) => {
      const[scrollX, setScrollX] = useState(0);
 
     const handleLeftArrow = () => {
@@ -40,7 +41,7 @@ export default ({title, items}) => {
               }} >
               {items.results.length > 0 && items.results.map((item, key)=>(
                   <div key={key} className="movieRow--item">
-                  <img src={`https://image.tmdb.org/t/p/w300${item.poster_path}`} alt={item.original_title} />
+                  <img src={item.poster_path === null ? Super: `https://image.tmdb.org/t/p/w300${item.poster_path}`} alt={item.original_title} />
                </div>
                ))}
            </div>
@@ -48,3 +49,4 @@ export default ({title, items}) => {
         </div>
     );
 }
+export default Catálogo;
