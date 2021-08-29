@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import './index.css';
+import './style.css';
 import NavigateBeforeIcon from '@material-ui/icons/NavigateBefore';
 import NavigateNextIcon from '@material-ui/icons/NavigateNext';
-import Super from './Super.png';
 
 const Catálogo= ({title, items}) => {
      const[scrollX, setScrollX] = useState(0);
@@ -41,7 +40,7 @@ const Catálogo= ({title, items}) => {
               }} >
               {items.results.length > 0 && items.results.map((item, key)=>(
                   <div key={key} className="movieRow--item">
-                  <img src={item.poster_path === null ? Super: `https://image.tmdb.org/t/p/w300${item.poster_path}`} alt={item.original_title} />
+                  <img src={`https://image.tmdb.org/t/p/w300${item.poster_path}`} alt={item.original_title} />
                </div>
                ))}
            </div>

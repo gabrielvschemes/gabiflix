@@ -1,5 +1,5 @@
 import React from 'react';
-import './index.css';
+import './style.css';
 
 const Banner= ({item}) => {
     console.log(item);
@@ -11,8 +11,8 @@ const Banner= ({item}) => {
     }
 
     let description = item.overview;
-    if(description.length > 200) {
-        description = description.substring(0, 200)+'...';
+    if(description.length > 138) {
+        description = description.substring(0, 138)+'...';
     }
     
     return (

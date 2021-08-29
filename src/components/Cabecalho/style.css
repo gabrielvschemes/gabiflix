@@ -73,23 +73,21 @@ header.black {
 }
 @media(max-width:760px) {
     .search-box {
-        padding-left: -40px;
-        top: 50%;
-        left: 63%;
-        top: 50%;
-        
-        
+        padding: 0 15px 0 15px;
+        height: 60%;
+        top: 46%;
+        left: 53%;                    
     }
 }
 @media(max-width:760px) {
     .header--logo img {
-        height: 100%;
-        width: 180px;
+        height: 90%;
+        width: 130px;
 }
 }
 @media(max-width:760px) {
     .header--user img {
-        height: 90%;
+        height: 80%;
         border-radius: 3px;
         padding-left: -1500px;
 }
