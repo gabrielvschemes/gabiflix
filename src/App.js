@@ -60,16 +60,15 @@ const App= () => {
 
       <footer>
       <div className='rodape'> 
-     <span className='rodape-copyright'>Copyright@{new Date().getFullYear()}</span><br></br>
-     Criado por Gabriel Valentim
+     <span className='rodape-copyright'>Copyright@{new Date().getFullYear()}</span>
+    <div>
+    Criado por Gabriel Valentim
+      </div> 
+    Dados pegos do site Themoviedb.org
      </div>
-     Dados pegos do site Themoviedb.org
      </footer>
 
       {movieList.length <= 0 &&
-      
-      
-
       <div className="loading">
         <img src="https://icon-library.com/images/loading-icon-animated-gif/loading-icon-animated-gif-19.jpg" alt="Carregando" />
       </div>
