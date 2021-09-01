@@ -12,7 +12,7 @@ header {
     transition: all ease 0.3s;
 }
 header.black {
-    background-color: rgb(9, 33, 63)
+    background-color: rgb(7, 23, 43)
 }
 .header--logo {
     height: 64px;
