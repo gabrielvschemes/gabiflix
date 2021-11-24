@@ -4,16 +4,17 @@ import './style.css';
 const Banner= ({item}) => {
     console.log(item);
 
-    let firstDate = new Date(item.first_air_date);
+    let firstDate = new Date(item.first_air_date); 
+    //variável que pega a data exata
     let genres = [];
     for(let i in item.genres) {
         genres.push( item.genres[i].name);
-    }
+    } //variável que pega os gêneros da API
 
     let description = item.overview;
     if(description.length > 138) {
         description = description.substring(0, 138)+'...';
-    }
+    } //descrição e o tamanho exato dela
     
     return (
         

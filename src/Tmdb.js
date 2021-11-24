@@ -1,4 +1,4 @@
-const API_KEY = 'de1ad72518c60e8ff5e30a823c1ae234';
+const API_KEY = '943189ba3300891eeacda468702c597b';
 const API_BASE = 'https://api.themoviedb.org/3';
 
 
@@ -14,7 +14,7 @@ const Tmdb= {
             {
                 slug: 'originals',
                 title: 'Adicionados Recentemente',
-                items: await basicFetch(`/discover/tv?with_network=213&language=pt-BR&api_key=${API_KEY}`)
+                items: await basicFetch(`/discover/tv?with_networks=213&language=pt-BR&api_key=${API_KEY}`)
             },
             {
                 slug: 'trending',

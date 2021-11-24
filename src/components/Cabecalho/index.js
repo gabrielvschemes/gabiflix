@@ -15,13 +15,14 @@ const Cabecalho= ({black=''}) => {
                 <a href="/">
                     <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/e70b1333850498.56ba69ac32ae3.png" alt="Usuário" />
                 </a>
+            </div>
                 <div className="search-box">
                     <input type="text" className="search-txt" placeholder="Pesquisar"></input>
                     <a href="#" className="search-btn">
                     <img src={Barra} alt="Lupa" height="20" width="20"></img>
                     </a>
                 </div>
-            </div>
+            
             
                </header>
     )

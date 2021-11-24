@@ -12,7 +12,7 @@ const Catálogo= ({title, items}) => {
                x = 0;
            }
            setScrollX(x);
-    }
+    } //mover para a esqueda
 
     const handleRightArrow = () => {
         let x = scrollX - Math.round(window.innerWidth / 2);
@@ -22,7 +22,7 @@ const Catálogo= ({title, items}) => {
 
         }
         setScrollX(x);
-    }
+    } //mover para a direita
 
     return (
         <div className="movieRow">
