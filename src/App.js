@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import Tmdb from './Tmdb';
-import MovieRow from './components/Catálogo';
-import FeaturedMovie from './components/Banner-destaque';
+import Listas from './components/Catálogo';
+import Banner from './components/Banner-destaque';
 import Cabecalho from './components/Cabecalho';
 
 const App= () => {
@@ -50,11 +50,11 @@ const App= () => {
       <Cabecalho black={blackHeader} />
 
       {featuredData &&
-        <FeaturedMovie item={featuredData} />
+        <Banner item={featuredData} />
       }
       <section className="lists">
         {movieList.map((item, key)=>(
-          <MovieRow key={key} title={item.title} items={item.items}/>
+          <Listas key={key} title={item.title} items={item.items}/>
         ))}
       </section>
 
